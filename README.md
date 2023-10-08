@@ -1,23 +1,23 @@
 # Coding With GPT
 
-This is a small project to have ChatGPT generate:
+I was curious to see how far AI assisted coding has come and created this small project to have ChatGPT generate:
 
 + A collection of bash scripts {d4, d6, d10, d12, d100} that simulate rolling a d-sided dice.
 
 + A python script {roll.py} that models rolling a d-sided dice n times.
 
-My guess is they just crawled [stackoverflow](https://stackoverflow.com/questions/14409661/dice-generator-using-class-in-python) and cribbed the answer from there. Which honestly is how I've solved every coding question I've had since at least 2017...
+And the results are encouraging.
 
-Still it's impressive how well it understood what the code is doing.
+It understood the requuest (die as in dice, versus die to no longer be alive) and created a Python class to model d-sided dice.
 
 When I asked it to extend the dice class to allow rolling multiple times it created a new method.
 
-And when I asked it what the function returns, it correctly responded a 'list of integers'.
+And when I asked it what the multiple function returns, it correctly responded a 'list of integers'.
 
 And was able to modify the return value so it returned the sum of the list instead of the actual list.
 
 
-With the bash scripts it was even able to change the algorithm used to generate the random numbers (going from shuf to /dev/random).
+For bash, it came up with a novel appraoch (using shuf) and was even able to change the algorithm used to generate the random numbers (going from shuf to /dev/random) when asked.
 
 Even though this is a trivial example I admit I'm pretty impressed with how easy it was to get useful work from the bot. Going forward I would probably ask ChatGPT for help on a technical question before I did a Google search.
 
