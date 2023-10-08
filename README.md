@@ -12,6 +12,8 @@ It understood the request (die as in dice, versus die to no longer be alive) and
 
 When I asked it to extend the dice class to allow rolling multiple times it created a new method.
 
+Checking the boundary condition ```if n<=0:``` before doing the rolls was a nice touch. I'm pretty lazy and often forget to add these types of safeguards.
+
 And when I asked it what the multiple function returns, it correctly responded a 'list of integers'.
 
 And was able to modify the return value so it returned the sum of the list instead of the actual list.
