@@ -67,7 +67,8 @@ print(f"The result of the roll is: {result}")
 This code allows you to create dice objects with different numbers of sides and roll them to simulate the outcome of rolling a physical die.
 
 ```
-can you modify the class so you can roll the die n-times. for example 3d6 would roll the 6 sided dice 3 times or 2d20 would roll a 20 sided dice twice
+can you modify the class so you can roll the die n-times.
+for example 3d6 would roll the 6 sided dice 3 times or 2d20 would roll a 20 sided dice twice
 ```
 
 Certainly! You can modify the `Die` class to handle rolling the die multiple times by adding a method to simulate rolling the die n times. Here's an updated version of the `Die` class that allows you to roll the die n times:
