@@ -1,9 +1,10 @@
 # Coding With GPT
 
+This is a small project to have ChatGPT generate:
 
-A collection of bash scripts {d4, d6, d10, d12, d100} that simulate rolling a d-sided dice.
++ A collection of bash scripts {d4, d6, d10, d12, d100} that simulate rolling a d-sided dice.
 
-A python script {roll.py} that models rolling a d-sided dice n times.
++ A python script {roll.py} that models rolling a d-sided dice n times.
 
 My guess is they just crawled [stackoverflow](https://stackoverflow.com/questions/14409661/dice-generator-using-class-in-python) and cribbed the answer from there. Which honestly is how I've solved every coding question I've had since at least 2017...
 
