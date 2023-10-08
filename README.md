@@ -1,14 +1,13 @@
-# coding-with-gpt
+# Coding With GPT
 
 
-A collection of bash scripts {d4, d6, d10, d12, d100} that simuluate rolling a d-sided dice.
+A collection of bash scripts {d4, d6, d10, d12, d100} that simulate rolling a d-sided dice.
 
 A python script {roll.py} that models rolling a d-sided dice n times.
 
-My guess is they just crawled [this page on stackoverflow](https://stackoverflow.com/questions/14409661/dice-generator-using-class-in-python) and cribbed the answer from there. Which honestly is how I've solved every coding question I've had since at least 2017...
+My guess is they just crawled [stackoverflow](https://stackoverflow.com/questions/14409661/dice-generator-using-class-in-python) and cribbed the answer from there. Which honestly is how I've solved every coding question I've had since at least 2017...
 
 Still it's impressive how well it understood what the code is doing.
-
 
 When I asked it to extend the dice class to allow rolling multiple times it created a new method.
 
@@ -16,9 +15,10 @@ And when I asked it what the function returns, it correctly responded a 'list of
 
 And was able to modify the return value so it returned the sum of the list instead of the actual list.
 
-Even though this is a trivial example I admit I'm pretty impressed with how easy it was to get useful work from the bot.
 
-With the bash scripts it was even able to change the algoritihm used to generate the random numbers (going from shuf to /dev/random).
+With the bash scripts it was even able to change the algorithm used to generate the random numbers (going from shuf to /dev/random).
+
+Even though this is a trivial example I admit I'm pretty impressed with how easy it was to get useful work from the bot. Going forward I would probably ask ChatGPT for help on a technical question before I did a Google search.
 
 Pretty impressive stuff...
 
