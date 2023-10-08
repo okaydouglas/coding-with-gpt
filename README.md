@@ -18,6 +18,10 @@ And was able to modify the return value so it returned the sum of the list inste
 
 Even though this is a trivial example I admit I'm pretty impressed with how easy it was to get useful work from the bot.
 
+With the bash scripts it was even able to change the algoritihm used to generate the random numbers (going from shuf to /dev/random).
+
+Pretty impressive stuff...
+
 
 ## ChatGPT logs
 
