@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#
+# d100-- prints a random number between 1-100
+#
+d100=$(od -A n -t d -N 1 /dev/urandom | tr -d ' ')
+
+export d100=$(( ${d100} % 100 + 1))
+echo $d100

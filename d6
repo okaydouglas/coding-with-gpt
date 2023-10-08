@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#
+# d6-- prints a random number between 1-6
+#
+
+# worked on mac:
+# RANDOM=$(date -j -f "%a %b %d %T %Z %Y" "`date`" "+%s")
+
+# worked on ubuntu:
+RANDOM=$(od -A n -t d -N 1 /dev/urandom | tr -d ' ')
+
+export d6=$(( $RANDOM % 6 + 1 ))
+
+echo $d6

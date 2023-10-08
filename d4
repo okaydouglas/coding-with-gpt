@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#
+# d4-- prints a random number between 1-4
+#
+
+# worked on mac:
+# RANDOM=$(date -j -f "%a %b %d %T %Z %Y" "`date`" "+%s")
+
+# worked on ubuntu:
+RANDOM=$(od -A n -t d -N 1 /dev/urandom | tr -d ' ')
+
+export d4=$(( $RANDOM % 4 + 1 ))
+
+echo $d4
