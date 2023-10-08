@@ -5,6 +5,20 @@ A collection of bash scripts {d4, d6, d10, d12, d100} that simuluate rolling a d
 
 A python script {roll.py} that models rolling a d-sided dice n times.
 
+My guess is they just crawled [this page on stackoverflow](https://stackoverflow.com/questions/14409661/dice-generator-using-class-in-python) and cribbed the answer from there. Which honestly is how I've solved every coding question I've had since at least 2017...
+
+Still it's impressive how well it understood what the code is doing.
+
+
+When I asked it to extend the dice class to allow rolling multiple times it created a new method.
+
+And when I asked it what the function returns, it correctly responded a 'list of integers'.
+
+And was able to modify the return value so it returned the sum of the list instead of the actual list.
+
+Even though this is a trivial example I admit I'm pretty impressed with how easy it was to get useful work from the bot.
+
+
 ## ChatGPT logs
 
 ```
@@ -145,3 +159,43 @@ print(f"The sum of rolling 3d6 is: {result_sum}")
 
 In this example, `result_sum` will contain the sum of the outcomes of rolling the six-sided die three times.
 
+
+
+
+### Bash Scripting
+
+```
+can you write a bash script that returns a random d6 number
+
+```
+
+Certainly! You can use the `shuf` command in Bash to generate a random number between 1 and 6, simulating a roll of a six-sided die (d6). Here's a simple Bash script to do that:
+
+```bash
+#!/bin/bash
+
+# Generate a random number between 1 and 6
+random_number=$(shuf -i 1-6 -n 1)
+
+echo "You rolled a d6 and got: $random_number"
+```
+
+Save this script to a file (e.g., `roll_d6.sh`), make it executable with the `chmod +x roll_d6.sh` command, and then you can run it to get a random d6 number.
+
+```
+can you use /dev/random instead of shuf
+
+```
+
+Certainly! You can use `/dev/random` to generate random numbers. Here's a Bash script that uses `/dev/random` to generate a random number between 1 and 6:
+
+```bash
+#!/bin/bash
+
+# Generate a random number between 1 and 6 using /dev/random
+random_number=$(od -An -N1 -i /dev/random | awk '{print $1 % 6 + 1}')
+
+echo "You rolled a d6 and got: $random_number"
+```
+
+This script uses the `od` command to read one byte from `/dev/random`, then uses `awk` to calculate the remainder when dividing the byte value by 6, which ensures the result is between 1 and 6. Save this script to a file, make it executable, and run it to get a random d6 number.
