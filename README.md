@@ -8,7 +8,7 @@ I was curious to see how far AI assisted coding has come and created this small 
 
 And the results are encouraging.
 
-It understood the requuest (die as in dice, versus die to no longer be alive) and created a Python class to model d-sided dice.
+It understood the request (die as in dice, versus die to no longer be alive) and created a Python class to model d-sided dice.
 
 When I asked it to extend the dice class to allow rolling multiple times it created a new method.
 
@@ -17,7 +17,7 @@ And when I asked it what the multiple function returns, it correctly responded a
 And was able to modify the return value so it returned the sum of the list instead of the actual list.
 
 
-For bash, it came up with a novel appraoch (using shuf) and was even able to change the algorithm used to generate the random numbers (going from shuf to /dev/random) when asked.
+For bash, it came up with a novel approach (using shuf) and was even able to change the algorithm used to generate the random numbers (going from shuf to /dev/random) when asked.
 
 Even though this is a trivial example I admit I'm pretty impressed with how easy it was to get useful work from the bot. Going forward I would probably ask ChatGPT for help on a technical question before I did a Google search.
 
