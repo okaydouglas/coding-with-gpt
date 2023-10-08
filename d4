@@ -7,6 +7,13 @@
 # worked on mac:
 # RANDOM=$(date -j -f "%a %b %d %T %Z %Y" "`date`" "+%s")
 
+# ChatGPT suggested two solutions:
+# Generate a random number between 1 and 4
+# RANDOM=$(shuf -i 1-4 -n 1)
+# or
+# RANDOM=$(od -An -N1 -i /dev/random | awk '{print $1 % 4 + 1}')
+
+
 # worked on ubuntu:
 RANDOM=$(od -A n -t d -N 1 /dev/urandom | tr -d ' ')
 
