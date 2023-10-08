@@ -16,12 +16,13 @@ And when I asked it what the multiple function returns, it correctly responded a
 
 And was able to modify the return value so it returned the sum of the list instead of the actual list.
 
-
 For bash, it came up with a novel approach (using shuf) and was even able to change the algorithm used to generate the random numbers (going from shuf to /dev/random) when asked.
 
-Even though this is a trivial example I admit I'm pretty impressed with how easy it was to get useful work from the bot. Going forward I would probably ask ChatGPT for help on a technical question before I did a Google search.
+Even though this is a trivial example I admit I'm pretty impressed with how easy it was to get useful work from the bot. And I really like how it explains what the code is doing.
 
-Pretty impressive stuff...
+Going forward I would be much more inclined to ask ChatGPT for help on a technical question before I did a Google search.
+
+Very exciting times...
 
 
 ## ChatGPT logs
